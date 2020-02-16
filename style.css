@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    text-align: center;
+    font-family: "calibri";
+}
+header {
+    display: flex;
+    width: 100%;
+    height: 100px;
+}
+h1 {
+    font-size: 4em;
+    margin: auto;
+}
+h2 {
+    margin: auto;
+    font-size: 2em;
+}
+.menus div {
+    margin: 20px 10px 20px 10px;
+}
+img {
+    width: 300px;
+    height: auto;
+    margin: auto;
+    box-shadow: 1px 1px 15px rgb(190,190,190);
+}
+.text {
+    color: rgb(253, 203, 70);
+    background-color: rgb(87, 156, 135);
+}
+.bloc_text {
+    color: rgb(253, 203, 70);
+    background-color: rgb(87, 156, 135);
+    border-radius: 20px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    display: flex;
+}
+footer {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
