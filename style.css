@@ -18,11 +18,16 @@ h1 {
 }
 h2 {
     margin: auto;
-    font-size: 2em;
+    font-size: 2.2em;
+    font-weight: 500;
+}
+h3 {
+    margin: auto;
+    font-size: 2.7em;
     font-weight: 500;
 }
 .menus div {
-    margin: 20px 10px 20px 10px;
+    margin: 50px 10px 20px 10px;
 }
 img {
     width: 300px;
@@ -30,6 +35,20 @@ img {
     margin: auto;
     box-shadow: 1px 1px 15px rgb(190,190,190);
 }
+footer a {
+    text-decoration: none;
+    color: rgb(253, 203, 70);
+    margin: auto;
+}
+footer a:hover {
+    animation: wiggle 200ms;
+    animation-iteration-count: infinite;
+}
+@keyframes wiggle {
+    0% { transform: translate(10px); }
+    50% { transform: translate(-10px); }
+    100% { transform: translate(10px); }
+  }
 .text {
     color: rgb(253, 203, 70);
     background-color: rgb(87, 156, 135);
@@ -41,7 +60,36 @@ img {
     width: 80%;
     margin: auto;
     margin-bottom: 20px;
-    display: flex;
+}
+.bloc_animation {
+    margin-top: 15px;
+}
+.bloc_animation div {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(253, 203, 70);
+    margin: auto;
+    display: inline-block;
+    border-radius: 50%;
+}
+@keyframes bounce {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0px); }
+  }
+.animation_1{
+    animation: bounce 1s;
+    animation-iteration-count: infinite;
+}
+.animation_2{
+    animation: bounce 1s;
+    animation-delay: 200ms;
+    animation-iteration-count: infinite;
+}
+.animation_3{
+    animation: bounce 1s;
+    animation-delay: 400ms;
+    animation-iteration-count: infinite;
 }
 footer {
     position: sticky;
@@ -49,29 +97,112 @@ footer {
     width: 100%;
     height: 100px;
     display: flex;
+    justify-content: space-between;
+}
+.note {
+    text-align: center;
+}
+section div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+span {
+    margin: auto;
+    font-weight: 700;
+}
+p {
+    text-align: left;
+    margin-right: 20px;
+}
+.menu_1 h3 {
+    font-family: 'Devonshire', cursive;
+}
+.menu_1 {
+    text-align: center;
+    font-family: 'Segoe print';
+    background-color: #fcdfdb;
+    margin: auto;
+}
+.menu_2 {
+    text-align: center;
+    margin: auto;
+    background-color: #fff5fe;
+}
+.menu_2 h3 {
+    font-family: 'croissant one';
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(left, #c67412, #c67412, #a56799, #6e4ccc, #6e4ccc);
+}
+.menu_3 {
+    text-align: center;
+    margin: auto;
+    font-family: 'Segoe print';
+    background-color: #edefef;
+}
+.menu_3 h3 {
+    font-family: 'Dancing script';
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(left, #000, #000,#0228dd, #0670f3, #229df9, #fff, #fff);
+}
+.menu_4 {
+    text-align: center;
+    margin: auto;
+    background-color: #fdfffd;
+    font-family: 'Segoe print';
+}
+.menu_4 h3{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(left, #3d923a, #3d923a, #89d262, #beff7f, #beff7f);
+}
+section {
+    margin: 20px auto 50px auto;
+    padding: 0 15px 0 15px;
+}
+.price {
+    float: right;
+}
+.title {
+    line-height: 1.5;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: auto;
+}
+.title:after {
+    content: '';
+    width: 0px;
+    height: 3px;
+    display: block;
+    background: black;
+    transition: 500ms;
+}
+.title:hover:after {
+    width: 100%;
 }
 @media only screen and (min-width: 820px){
 
     header {
-        height: 250px;
+        height: 150px;
         font-size: 2em;
     }
     .menus div {
         width: 35%;
         display: inline-block;
-        margin: 80px 50px 0px 50px;
     }
     img {
-        width: 550px;
+        width: 400px;
     }
     .bloc_text {
-        width: 650px;
+        width: 40%;
         height: 120px;
         margin-top: 75px;
         margin-bottom: 20px;
-        font-size: 1.2em;
+        font-size: 1.5em;
     }
-    h2 {
+    h3 {
         font-size: 3.3em;
     }
     footer {
