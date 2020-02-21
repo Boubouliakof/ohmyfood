@@ -11,6 +11,13 @@ header {
     width: 100%;
     height: 100px;
 }
+input {
+    height: 25px;
+}
+header a {
+    text-decoration: none;
+    color: rgb(253, 203, 70);
+}
 h1 {
     font-size: 3.4em;
     font-weight: 600;
@@ -26,6 +33,14 @@ h3 {
     font-size: 2.7em;
     font-weight: 500;
 }
+.title:before h4:after { 
+    content:'+++'; 
+    display:inline-block; 
+    vertical-align: middle; 
+    width: 2rem; 
+    height: 5px;
+    background: #000 
+}
 .menus div {
     margin: 50px 10px 20px 10px;
 }
@@ -35,13 +50,37 @@ img {
     margin: auto;
     box-shadow: 1px 1px 15px rgb(190,190,190);
 }
+.fas {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(left, #f16062, #f05861, #f37265, #f48267, #f6916a);
+}
+.menu_end {
+    display: inline-block;
+    width: 70%;
+    margin: auto;
+    font-family: 'Devonshire', cursive;
+    font-weight: 500;
+    font-size: 1.6em;
+}
+.menu_end span{
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 50px;;
+}
+.menu_end p {
+    padding-top: 5px;
+}
+footer h2 {
+    font-size: 2em;
+}
 footer a {
     text-decoration: none;
     color: rgb(253, 203, 70);
     margin: auto;
 }
 footer a:hover {
-    animation: wiggle 200ms;
+    animation: wiggle 300ms;
     animation-iteration-count: infinite;
 }
 @keyframes wiggle {
@@ -61,12 +100,15 @@ footer a:hover {
     margin: auto;
     margin-bottom: 20px;
 }
+.bloc_text h2 {
+    display: block;
+}
 .bloc_animation {
-    margin-top: 15px;
+    margin-top: 10px;
 }
 .bloc_animation div {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     background-color: rgb(253, 203, 70);
     margin: auto;
     display: inline-block;
@@ -111,6 +153,10 @@ span {
     margin: auto;
     font-weight: 700;
 }
+.gauche {
+    background-color: red;
+    width: 30%
+}
 p {
     text-align: left;
     margin-right: 20px;
@@ -123,6 +169,9 @@ p {
     font-family: 'Segoe print';
     background-color: #fcdfdb;
     margin: auto;
+}
+.note_music span{
+    margin-top: 80px;
 }
 .menu_2 {
     text-align: center;
@@ -182,6 +231,9 @@ section {
 .title:hover:after {
     width: 100%;
 }
+main h2 {
+    display: none;
+}
 @media only screen and (min-width: 820px){
 
     header {
@@ -189,11 +241,21 @@ section {
         font-size: 2em;
     }
     .menus div {
-        width: 35%;
+        width: 40%;
+        overflow: hidden;
         display: inline-block;
+        margin: 50px 50px 20px 50px;
     }
     img {
-        width: 400px;
+        width: 420px;
+    }
+    .menus div img {
+        transform-origin: center;
+        transition: transform .50s, visibility .50s ease-in-out;
+    }
+    .menus div:hover img {
+        transform: scale(1.3);
+        opacity: 0.6;
     }
     .bloc_text {
         width: 40%;
@@ -203,7 +265,7 @@ section {
         font-size: 1.5em;
     }
     h3 {
-        font-size: 3.3em;
+        font-size: 4.5em;
     }
     footer {
         margin-top: 50px;
@@ -213,5 +275,52 @@ section {
     }
     .footer_right {
         margin-right: 40px;
+    }
+    main {
+        width: 70%;
+        margin: auto;
+    }
+    main h2 {
+        display: block;
+        margin: 50px 0 20px 0;
+        font-size: 3.5em;
+        font-weight: 600;
+    }
+    article h3 {
+        padding-top: 50px;
+    }
+    .menu_1 h3 {
+        padding-top: 0;
+    }
+    .menu_end {
+        width: 25%;
+        margin: auto;
+        text-align: center;
+        display: flex;
+    }
+    section {
+        width: 70%;
+        margin: auto;
+        padding: 50px 0 0 50px;
+        line-height: 3;
+    }
+    .bloc_text h2 {
+        font-size: 2.2em;
+        margin: 0;
+    }
+    .bloc_animation {
+        padding: 20px 0 0 0;
+        line-height: 0;
+    }
+    .price {
+        margin-right: 0;
+    }
+    .trait {
+        width: 30%;
+        float: left;
+        height: 12px; 
+        margin: 44px 0; 
+        background-color:gray;
+        border-radius: 40%;
     }
 }
