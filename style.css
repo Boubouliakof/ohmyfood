@@ -5,73 +5,66 @@
 body {
     text-align: center;
     font-family: sans-serif;
+    width: 500px;
+    margin: auto;
 }
 header {
     display: flex;
     width: 100%;
     height: 100px;
 }
-input {
-    height: 25px;
-}
 header a {
     text-decoration: none;
     color: rgb(253, 203, 70);
 }
-h1 {
+input {
+    height: 25px;
+    width: 100%;
+}
+h2 {
     font-size: 3.4em;
     font-weight: 600;
     margin: auto;
 }
-h2 {
+h3 {
     margin: auto;
-    font-size: 2.2em;
+    font-size: 2em;
     font-weight: 500;
 }
-h3 {
+h4 {
     margin: auto;
     font-size: 2.7em;
     font-weight: 500;
 }
-.title:before h4:after { 
-    content:'+++'; 
-    display:inline-block; 
-    vertical-align: middle; 
-    width: 2rem; 
-    height: 5px;
-    background: #000 
-}
 .menus div {
     margin: 50px 10px 20px 10px;
 }
-img {
-    width: 300px;
+.menus img {
+    width: 400px;
     height: auto;
     margin: auto;
     box-shadow: 1px 1px 15px rgb(190,190,190);
 }
-.fas {
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-image: -webkit-linear-gradient(left, #f16062, #f05861, #f37265, #f48267, #f6916a);
+.line {
+    margin: 0;
+    width: auto;
+    overflow: hidden;
+    padding: 0;
+}
+.line img {
+    width: 280px;
+    height: 30px;
+    margin: auto;
+    overflow: hidden;
 }
 .menu_end {
-    display: inline-block;
-    width: 70%;
+    width: 250px;
     margin: auto;
-    font-family: 'Devonshire', cursive;
-    font-weight: 500;
-    font-size: 1.6em;
 }
-.menu_end span{
-    float: left;
-    margin-right: 5px;
-    margin-bottom: 50px;;
+.menu_end img{
+    width: 250px;
 }
-.menu_end p {
-    padding-top: 5px;
-}
-footer h2 {
+footer h3 {
     font-size: 2em;
 }
 footer a {
@@ -79,7 +72,7 @@ footer a {
     color: rgb(253, 203, 70);
     margin: auto;
 }
-footer a:hover {
+footer h3:hover {
     animation: wiggle 300ms;
     animation-iteration-count: infinite;
 }
@@ -100,11 +93,12 @@ footer a:hover {
     margin: auto;
     margin-bottom: 20px;
 }
-.bloc_text h2 {
+.bloc_text h3 {
     display: block;
 }
 .bloc_animation {
     margin-top: 10px;
+    display: block;
 }
 .bloc_animation div {
     width: 15px;
@@ -160,14 +154,12 @@ span {
 p {
     text-align: left;
     margin-right: 20px;
-}
-.menu_1 h3 {
-    font-family: 'Devonshire', cursive;
+    width: 350px;
 }
 .menu_1 {
     text-align: center;
     font-family: 'Segoe print';
-    background-color: #fcdfdb;
+    background-color: rgb(252,223,219);
     margin: auto;
 }
 .note_music span{
@@ -178,23 +170,11 @@ p {
     margin: auto;
     background-color: #fff5fe;
 }
-.menu_2 h3 {
-    font-family: 'croissant one';
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-image: -webkit-linear-gradient(left, #c67412, #c67412, #a56799, #6e4ccc, #6e4ccc);
-}
 .menu_3 {
     text-align: center;
     margin: auto;
-    font-family: 'Segoe print';
     background-color: #edefef;
-}
-.menu_3 h3 {
-    font-family: 'Dancing script';
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-image: -webkit-linear-gradient(left, #000, #000,#0228dd, #0670f3, #229df9, #fff, #fff);
+    font-family: 'Segoe print';
 }
 .menu_4 {
     text-align: center;
@@ -202,17 +182,13 @@ p {
     background-color: #fdfffd;
     font-family: 'Segoe print';
 }
-.menu_4 h3{
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-image: -webkit-linear-gradient(left, #3d923a, #3d923a, #89d262, #beff7f, #beff7f);
-}
 section {
     margin: 20px auto 50px auto;
     padding: 0 15px 0 15px;
 }
 .price {
     float: right;
+    margin-right: 0;
 }
 .title {
     line-height: 1.5;
@@ -231,22 +207,36 @@ section {
 .title:hover:after {
     width: 100%;
 }
-main h2 {
+.menu_title img{
+    margin-top: 50px;
+    width: 500px;
+}
+main h3 {
     display: none;
+}
+.mentions p{
+    text-align: center;
+    width: auto;
+    margin: 0;
+}
+article:last-child {
+    padding-bottom: 20px;
 }
 @media only screen and (min-width: 820px){
 
+    body {
+        width: 100%;
+    }
     header {
         height: 150px;
         font-size: 2em;
     }
     .menus div {
-        width: 40%;
         overflow: hidden;
         display: inline-block;
         margin: 50px 50px 20px 50px;
     }
-    img {
+    .menus img {
         width: 420px;
     }
     .menus div img {
@@ -258,13 +248,16 @@ main h2 {
         opacity: 0.6;
     }
     .bloc_text {
-        width: 40%;
+        width: 50%;
         height: 120px;
         margin-top: 75px;
         margin-bottom: 20px;
         font-size: 1.5em;
     }
-    h3 {
+    p {
+        width: 100%;
+    }
+    h4 {
         font-size: 4.5em;
     }
     footer {
@@ -277,50 +270,55 @@ main h2 {
         margin-right: 40px;
     }
     main {
-        width: 70%;
         margin: auto;
     }
-    main h2 {
+    main h3 {
         display: block;
         margin: 50px 0 20px 0;
-        font-size: 3.5em;
-        font-weight: 600;
+        font-size: 4em;
+        font-weight: 500;
     }
-    article h3 {
-        padding-top: 50px;
-    }
-    .menu_1 h3 {
-        padding-top: 0;
-    }
-    .menu_end {
-        width: 25%;
-        margin: auto;
-        text-align: center;
-        display: flex;
-    }
-    section {
+    article {
         width: 70%;
         margin: auto;
-        padding: 50px 0 0 50px;
+    }
+    .mentions p{
+        text-align: center;
+        width: auto;
+        margin: 0;
+    }
+    .menu_1 h4 {
+        padding-top: 0;
+    }
+    section div {
+        width: 80%;
+        margin: auto;
+        padding: 50px 0 0 0;
         line-height: 3;
     }
-    .bloc_text h2 {
+    .bloc_text h3 {
         font-size: 2.2em;
         margin: 0;
     }
     .bloc_animation {
         padding: 20px 0 0 0;
         line-height: 0;
+        display: block;
     }
-    .price {
-        margin-right: 0;
+    .bloc_animation div {
+        padding: 0;
     }
-    .trait {
-        width: 30%;
-        float: left;
-        height: 12px; 
-        margin: 44px 0; 
-        background-color:gray;
-        border-radius: 40%;
+    .title_menu {
+        width: 95%;
+        margin: auto;
+    }
+    .line img {
+        width: 340px;
+        height: 30px;
+        margin: auto;
+        overflow: hidden;
+    }
+    footer h3 {
+        font-size: 3em;
     }
 }
