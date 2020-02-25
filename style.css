@@ -213,6 +213,7 @@ section {
 }
 main {
     width: 320px;
+    margin: auto;
 }
 main h3 {
     display: none;
