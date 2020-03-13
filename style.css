@@ -160,6 +160,45 @@ section {
     margin-top: 50px;
     width: 300px;
 }
+.entree {
+    font-size: 22px;
+    color: rgb(198,116,18);
+}
+.entree h3{
+    line-height: 1.5;
+    font-size: 25px;
+    font-weight: 700;
+    margin: auto;
+}
+.entree span{
+    font-weight: normal;
+}
+.plat {
+    font-size: 22px;
+    color: rgb(165,103,153);
+}
+.plat h3{
+    line-height: 1.5;
+    font-size: 25px;
+    font-weight: 700;
+    margin: auto;
+}
+.plat span{
+    font-weight: normal;
+}
+.dessert {
+    font-size: 22px;
+    color: rgb(110,76,204);
+}
+.dessert h3{
+    line-height: 1.5;
+    font-size: 25px;
+    font-weight: 700;
+    margin: auto;
+}
+.dessert span{
+    font-weight: normal;
+}
 main {
     width: 320px;
     margin: auto;
@@ -256,6 +295,39 @@ footer h2:hover {
     transition: 500ms;
 }
 .title:hover:after {
+    width: 100%;
+}
+.title1:after {
+    content: '';
+    width: 0px;
+    height: 3px;
+    display: block;
+    background: rgb(198,116,18);
+    transition: 500ms;
+}
+.title1:hover:after {
+    width: 100%;
+}
+.title2:after {
+    content: '';
+    width: 0px;
+    height: 3px;
+    display: block;
+    background: rgb(165,103,153);
+    transition: 500ms;
+}
+.title2:hover:after {
+    width: 100%;
+}
+.title3:after {
+    content: '';
+    width: 0px;
+    height: 3px;
+    display: block;
+    background: rgb(110,76,204);
+    transition: 500ms;
+}
+.title3:hover:after {
     width: 100%;
 }
 /* Animation soulignement */
